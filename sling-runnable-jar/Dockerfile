@@ -13,6 +13,12 @@
 # Use docker ps to see what's running and 
 # docker stop <container id> to stop
 #
+# To run on an existing Sling data folder use
+# 
+#  docker run -v <your-sling-data-folder>:/usr/local/sling/sling:rw <image ID>
+#
+# as per http://docs.docker.io/en/latest/use/working_with_volumes/
+#
 FROM base
 MAINTAINER myself
 RUN apt-get -qq update
